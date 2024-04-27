@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.contain {
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 0 20px;
+    
+}
+h1 {
+    text-align: center;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.page {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.join {
+    background-color: white;
+    font-size: 400%;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.bg-img1{
+    margin: 2%;
+    background-image: url("photo.PNG");
+    opacity: 0.5;
+    min-height: 550px;  
+    min-width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+}
+.bg-img1:hover{
+    opacity: 1.0;
+}
+
+.final {
+    align-items: center;
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}

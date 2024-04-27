@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    text-align:center;
+    padding: 2%;
+}
+
+h6 {
+    font-size: 50px;
+}
+
+header {
+    background-color: black;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+    color: white;
+}
+
+nav ul li a:hover{
+    background-color:antiquewhite;
+}
+
+nav ul li a {
+    font-family: 'papyrus', cursive;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.container {
+    background-color: white;
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+.cart {
+    max-width: 91vw;
+    margin: auto;
+}
+
+.cart h2 {
+    text-align: center;
+    margin: 26px 0;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 800%;
+    color:black;
+    font-weight: 300;
+}
+
+.para {
+    text-align: center;
+    background-color: white;
+}
+
+.cart-item {
+    background-color: white;
+    margin: 0 26px;
+    width: 500;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    height: 12vh;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.blur_image {
+    filter: blur(3px);
+}
+
+.blur_image1:hover {
+    filter: blur(2px);
+}
+
+.font{
+    font-size: 200%;
+}
+
+
+.centered {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered1 {
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
