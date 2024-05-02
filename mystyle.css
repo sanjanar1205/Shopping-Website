@@ -47,6 +47,49 @@ nav ul li a {
     font-weight: bolder;
 }
 
+.search input {
+    flex: 1;
+    background: transparent;
+    outline: none; 
+    width: 200px;
+    height: 25px;
+    /* border-radius: 20px; */
+    border: none;
+}
+
+::placeholder{
+    color: black;
+}
+
+.search {
+    float: right;
+    margin: 500px;
+}
+
+.search button {
+    background-color: black;
+    color: white;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* padding: 5px 8px;
+    margin-right: 12px; */
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    display: flex;
+    border-radius: 40px;
+    padding: 5px 10px;
+    
+}
+
 .container {
     background-color: white;
     min-height: calc(100vh - 58px - 12vh);
