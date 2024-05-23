@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+img,
+picture,
+video {
+  max-width: 100%;
+}
+
 .center {
     text-align:center;
     padding: 2%;
@@ -13,7 +19,7 @@ h6 {
 }
 
 header {
-    background-color: black;
+    background-color: white;
 }
 
 nav ul {
@@ -31,7 +37,7 @@ nav ul {
 nav ul li {
     list-style: none;
     padding: 0 23px;
-    color: white;
+    color: black;
 }
 
 nav ul li a:hover{
@@ -49,26 +55,25 @@ nav ul li a {
 
 .search input {
     flex: 1;
-    background: transparent;
     outline: none; 
-    width: 200px;
-    height: 25px;
-    /* border-radius: 20px; */
+    /* width: 200px;
+    height: 25px; */
     border: none;
 }
 
-::placeholder{
+/* ::placeholder{
     color: black;
-}
+} */
 
 .search {
     float: right;
     margin: 500px;
+
 }
 
 .search button {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     float: right;
     width: 30px;
     height: 30px;
@@ -93,6 +98,7 @@ nav ul li a {
 .container {
     background-color: white;
     min-height: calc(100vh - 58px - 12vh);
+    
 }
 
 .cart {
@@ -121,6 +127,14 @@ nav ul li a {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.cart-item1 {
+  background-color: white;
+  /* margin: 10px; */
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 footer {
@@ -167,3 +181,159 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 80rem) {
+    .container {
+      margin: 1em 2em;
+    }
+
+    .cart h2 {
+      font-size: 6rem;
+    }
+
+    .text {
+      font-size: 25px;
+    }
+
+    .search input {
+      width: 150px;
+      height: 20px;
+    }
+
+    .search button {
+      width: 25px;
+      height: 25px;
+      font-size: 10px;
+    }
+
+    nav ul li {
+      padding: 0 15px;
+    }
+
+    nav ul li a {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 60rem) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+    }
+
+    .search {
+      float: none;
+      margin: 20px 0;
+    }
+
+    .search-bar {
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .cart-item {
+      margin: 0 10px;
+    }
+
+    .center {
+      padding: 1%;
+    }
+
+    .container {
+      margin: 0.5em 1em;
+    }
+
+    .cart h2 {
+      font-size: 4rem;
+    }
+
+    .text {
+      font-size: 20px;
+    }
+
+    .font {
+      font-size: 150%;
+    }
+  }
+
+  @media screen and (max-width: 40rem) {
+    .cart h2 {
+      font-size: 2.5rem;
+    }
+
+    .text {
+      font-size: 18px;
+    }
+
+    .search input {
+      width: 100px;
+      height: 18px;
+    }
+
+    .search button {
+      width: 20px;
+      height: 20px;
+      font-size: 8px;
+    }
+
+    .font {
+      font-size: 100%;
+    }
+  }
+
+  /* Side Panel Styles */
+  .side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .side-panel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .side-panel a:hover {
+    color: #f1f1f1;
+  }
+
+  .side-panel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  @media screen and (max-width: 40rem) {
+    .side-panel a {
+      font-size: 18px;
+    }
+  }
