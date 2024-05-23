@@ -6,23 +6,20 @@ body {
 .contain {
     font-family: "Rajdhani", sans-serif;
     color: white;
-    max-width: 800px;
-    margin: 150px auto;
-    padding: 0 20px;
-    
+    /* max-width: 800px; */
+    margin: 150px auto;  
 }
 h1 {
     text-align: center;
 }
 form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
 }
 .page {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    box-sizing: border-box;
 }
 
 .join {
@@ -33,9 +30,8 @@ form {
 }
 
 .bg-img1{
-    margin: 2%;
+    /* margin: 2%; */
     background-image: url("photo.PNG");
-    opacity: 0.5;
     min-height: 550px;  
     min-width: auto;
     background-position: center;
@@ -43,9 +39,6 @@ form {
     background-size: cover;
     position: relative;
   
-}
-.bg-img1{
-    opacity: 1.0;
 }
 
 .final {
